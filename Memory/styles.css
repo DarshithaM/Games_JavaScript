@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  color: darkcyan;
+}
+
+body {
+  height: 100vh;
+  background-image: url("Images/peakpx.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  font-weight: 300;
+}
+
+.headTag {
+  color: #fff; /* Title color */
+  font-weight: bolder;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds shadow for better readability */
+}
+
+.points > p {
+  color: darkcyan;
+  font-weight: bolder;
+}
+
+#point {
+  font-weight: bold;
+}
+
+.memory-game {
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 8px 9px 26px rgba(46, 61, 73, 0.5);
+}
+
+.memory-card {
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  margin: 5px;
+  position: relative;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  border-radius: 5px;
+  background-color: #ede2a8;
+}
+
+.memory-card:active {
+  transform: scale(0.97);
+  transition: transform 0.2s;
+}
+
+.memory-card.flip {
+  transform: rotateY(180deg);
+}
+
+.front-face,
+.back-face {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  position: absolute;
+  border-radius: 5px;
+  backface-visibility: hidden;
+}
+
+.front-face {
+  transform: rotateY(180deg);
+}
+
+#won {
+  visibility: hidden;
+  background: #f3f2f3;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  border: 2px solid #064d75;
+}
+
+#won > h1,
+#won p {
+  font-weight: bolder;
+}
+
+#playAgain {
+  color: saddlebrown;
+  border: 2px solid #2580b3;
+  border-radius: 5px;
+  background: #b8e0f7;
+}
+
+#playAgain:hover {
+  border: 2px solid #064d75;
+  background: linear-gradient(160deg, #5d92f5 30%, #a279c4 60%);
+}
+
+/* LARGE DEVICES */
+@media (min-width: 992px) {
+  .mainTag {
+    font-size: 80px;
+    margin-top: 60px;
+  }
+
+  .welcome {
+    font-size: 35px;
+  }
+
+  .btn-handle {
+    font-size: 40px;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+
+  .memory-game {
+    width: 640px;
+    height: 530px;
+  }
+
+  .front-face,
+  .back-face {
+    padding: 10px;
+  }
+
+  #won {
+    padding: 50px;
+  }
+
+  .headTag {
+    font-size: 70px;
+  }
+
+  .points > p,
+  #won > h1,
+  #won p,
+  #playAgain {
+    font-size: 35px;
+  }
+}

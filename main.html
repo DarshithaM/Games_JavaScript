@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+    rel="stylesheet"
+  /> 
+
+  <!--BOOTSTRAP-->
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+    crossorigin="anonymous"
+  />
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"
+  ></script>
+
+    <title>Games4Fun</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #f3e9b6, #a2ddb8);
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #fad930;
+            color: #333;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            position: relative;
+            background-image: url('https://www.transparenttextures.com/patterns/rosy.png');
+            background-repeat: repeat;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 30px;
+            color: #098f6b;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            letter-spacing: 2px;
+        }
+        h3 {
+            font-size: 1.8em;
+            margin-bottom: 40px;
+            color: #333;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+        .game-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .game-button {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            background:#f3ee76;
+            border: 2px solid  #f3ee76;
+            color: #333;
+            text-align: center;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-image:  #f3ee76;
+            animation: glow 1s infinite alternate;
+        }
+        @keyframes glow {
+            from {
+                box-shadow: 0 0 5px linear-gradient(to right, #f3e9b6, #a2ddb8);
+            }
+            to {
+                box-shadow: 0 0 20px linear-gradient(to right, #f3e9b6, #a2ddb8);
+            }
+        }
+        .game-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            text-decoration: none;
+        }
+        .game-button span {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: linear-gradient(to right, #f3e9b6, #a2ddb8);
+            margin-top: 10px;
+        }
+        .game-button p {
+            font-size: 1em;
+            color: #555;
+            margin-top: 5px;
+            padding: 0 10px;
+        }
+        .game-button::before {
+            content: attr(data-game);
+            font-size: 2em;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.2em;
+            }
+            h3 {
+                font-size: 1.5em;
+            }
+            .game-button {
+                padding: 10px;
+            }
+            .game-button span {
+                font-size: 1.2em;
+            }
+            .game-button p {
+                font-size: 0.9em;
+            }
+            .game-button::before {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><b>Games4Fun</b></h1>
+        <h3>Ready to unleash your inner game master? Dive in and pick your adventure!</h3>
+        <div class="game-buttons">
+            <a href="/connect4" class="game-button">
+                <span> Connect Four Dots ···· </span>
+                <p>Outsmart your opponent in this classic strategy game!</p>
+            </a>
+            <a href="/Memory" class="game-button">
+                <span> Memory Game 🀢🀣🀦🀤</span>
+                <p>Here, you have dropped your brains!! Test your memory skills with this fun and challenging game!</p>
+            </a>
+            <a href="/Snake" class="game-button">
+                <span> Snake Game 𓆘 </span>
+                <p>Relive the nostalgia with this addictive snake game!</p>
+            </a>
+            <a href="/Tetris" class="game-button" data-game="">
+                <span> Tetris ░ </span>
+                <p>Fit the blocks together in this all-time favorite puzzle game!</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
