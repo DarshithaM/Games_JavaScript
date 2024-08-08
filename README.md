@@ -8,4 +8,20 @@ Features
 - Whack-a-Mole: A game where players hit the moles that pop up from holes before they disappear.<br><br>
 
 SCREENSHOTS:<br><br>
-<img width="1790" alt="image" src="https://github.com/user-attachments/assets/142bf63d-c6d7-4824-87f1-5894374058cb">
+<img width="1788" alt="image" src="https://github.com/user-attachments/assets/3dd927d9-9465-45d2-b4cd-e157473d9243">
+
+<br>
+<img width="1792" alt="image" src="https://github.com/user-attachments/assets/31ec1fe2-aa3c-4c01-ba10-17be641af9f8">
+<br>
+<img width="1789" alt="image" src="https://github.com/user-attachments/assets/97441cde-cae1-4204-8919-4dc93c469658">
+<br>
+<img width="1792" alt="image" src="https://github.com/user-attachments/assets/66fcb0c9-0277-4ff3-a046-97cc94e7889a">
+<br>
+<img width="1791" alt="image" src="https://github.com/user-attachments/assets/7730bca3-de07-46cf-a39c-e624f63d5741">
+<br>
+<img width="1791" alt="image" src="https://github.com/user-attachments/assets/a36c4114-5397-4af4-b363-45a0e3d34e51">
+
+
+
+
+
